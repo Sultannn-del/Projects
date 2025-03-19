@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sultan</title>
+</head>
+<style type="text/css">
+	.Xt {
+		height: 300px;
+		width: 400px;
+		border: 2px dotted; black;
+		margin: 10px;
+		padding: 10px;
+		background: greenyellow;
+		animation-name: sultan;
+		animation-duration: 1minute;
+	}
+	.button{		
+		height: 100px;
+		margin-top: 150px;
+		border: 1px solidblack;
+	}
+</style>
+<body>
+	<div class="Xt">
+	<input type="number" name="first" id="first" step="any"/>
+	<select id="ope">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">x</option>
+		<option value="/">/</option>
+    </select>
+    <input type="number" name="second" id="second" step="any"/>
+    <br/>
+    <br/>
+    <button class="button" onclick="cal()">Calculate</button>
+    <input type="number" name="true" id="res" placeholder="Answer" readonly="treu"/>
+</div>
+</body>
+<script type="text/javascript">
+	function cal() {
+		var opr1 = document.getElementById('first').value ;
+		var opr2 = document.getElementById('second').value ;
+		var ope = document.getElementById('ope').value ;	
+		if (ope == '+') {
+			var res = parseInt(opr1) + parseInt(opr2) ;
+		}
+		if (ope == '-') {
+			var res = parseInt(opr1) - parseInt(opr2) ;
+		}
+		if (ope == '*') {
+			var res = parseInt(opr1) * parseInt(opr2) ;
+		}
+		if (ope == '/') {
+			var res = parseInt(apr1) / parseInt(opr2) ;
+		}
+		document.getElementById('res').value = res;
+	}
+</script>
+</html>

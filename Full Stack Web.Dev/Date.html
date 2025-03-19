@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date</title>
+</head>
+<body>
+<h1 id="results">
+	
+</h1>
+<button onclick="sultan()">DATE</button>
+<button onclick="sultan1()">Year</button>
+</body>
+<script type="text/javascript">
+	let date = new Date();
+	function sultan() {
+	document.getElementById('results').innerHTML = date;
+		}
+		function sultan1() {
+	document.getElementById('results').innerHTML = date.getFullYear();
+		}
+
+</script>
+</html>

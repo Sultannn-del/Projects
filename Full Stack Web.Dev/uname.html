@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>uname</title>
+</head>
+<body>
+	<input type="text" name="User name" />
+	<button id="submit" onclick="UN()">Submit</button>
+<h1></h1>
+</body>
+<script type="text/javascript">
+	function UN() {
+	var name1 = document.getElementsByName('User name')[0].value;
+	document.getElementsByName('User name')[0].value ="" ; 
+	document.getElementsByTagName('h1')[0].innerHTML = name1 ;
+	}
+	
+
+</script>
+</html>
